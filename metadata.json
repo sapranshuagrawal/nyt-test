@@ -1,0 +1,6 @@
+{
+  "name": "The New York Times",
+  "description": "The New York Times digital edition featuring breaking news, live updates, in-depth analysis, opinion columns, and interactive puzzles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
