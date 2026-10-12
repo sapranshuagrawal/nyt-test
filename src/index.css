@@ -1,40 +1,48 @@
 @import "tailwindcss";
 
 @layer utilities {
-  .font-nyt-masthead {
-    font-family: 'UnifrakturMaguntia', 'Georgia', serif;
-    letter-spacing: -0.5px;
+  .font-scoot {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   
-  .font-nyt-headline {
-    font-family: 'Playfair Display', Georgia, serif;
-  }
-  
-  .font-nyt-serif {
-    font-family: 'Newsreader', 'EB Garamond', Georgia, serif;
+  .font-scoot-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
   }
 
-  .font-nyt-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Scoot brand colors */
+  .bg-scoot-yellow {
+    background-color: #FFE600;
+  }
+
+  .text-scoot-yellow {
+    color: #FFE600;
+  }
+
+  .border-scoot-yellow {
+    border-color: #FFE600;
+  }
+
+  .bg-scoot-dark {
+    background-color: #1D1D1B;
   }
 }
 
-/* Custom drop-cap for editorial articles */
-.drop-cap::first-letter {
-  font-family: 'Playfair Display', Georgia, serif;
-  float: left;
-  font-size: 4rem;
-  line-height: 0.8;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-bottom: 2px;
-  color: #121212;
-  font-weight: 700;
+/* Custom scrollbar for modern airline UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 
-/* Print styling helper */
-@media print {
-  header, footer, nav, .no-print {
-    display: none !important;
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE600;
+}
+
